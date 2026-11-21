@@ -1,0 +1,358 @@
+/* ==========================================================================
+   SELARAS COFFEE - Custom External CSS
+   Tema: Minimalis, Hangat, & Elegan (Identitas Brand Kopi Lokal)
+   Palet Warna:
+   - Espresso: #362214
+   - Warm Cream: #faf6f0
+   - Caramel / Terracotta: #b97a47
+   - Soft Border: #eadccf
+   ========================================================================== */
+
+/* Variabel Warna & Properti */
+:root {
+  --color-espresso: #362214;
+  --color-espresso-dark: #24160c;
+  --color-cream: #faf6f0;
+  --color-cream-subtle: #f2eae0;
+  --color-caramel: #b97a47;
+  --color-caramel-hover: #9e6435;
+  --color-text-body: #3d332a;
+  --color-text-muted: #786d63;
+  --color-border: #eadccf;
+}
+
+/* Base Styling & Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text-body);
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Offset scroll agar tidak tertutup sticky navbar */
+section[id],
+header[id] {
+  scroll-margin-top: 76px;
+}
+
+/* Heading Typography */
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-espresso);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   1. NAVBAR
+   ========================================================================== */
+.navbar-selaras {
+  background-color: var(--color-espresso);
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-selaras .navbar-brand {
+  color: var(--color-cream);
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-selaras .navbar-brand i {
+  color: var(--color-caramel);
+  margin-right: 6px;
+}
+
+.navbar-selaras .nav-link {
+  color: #dfd5cb !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-selaras .nav-link:hover,
+.navbar-selaras .nav-link:focus {
+  color: var(--color-caramel) !important;
+}
+
+/* ==========================================================================
+   TOMBOL (BUTTONS)
+   ========================================================================== */
+.btn-selaras {
+  background-color: var(--color-caramel);
+  border-color: var(--color-caramel);
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 0.6rem 1.6rem;
+  transition: all 0.2s ease;
+}
+
+.btn-selaras:hover,
+.btn-selaras:focus {
+  background-color: var(--color-caramel-hover);
+  border-color: var(--color-caramel-hover);
+  color: #ffffff;
+}
+
+.btn-selaras-outline {
+  background-color: transparent;
+  border: 1.5px solid var(--color-espresso);
+  color: var(--color-espresso);
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 0.6rem 1.6rem;
+  transition: all 0.2s ease;
+}
+
+.btn-selaras-outline:hover {
+  background-color: var(--color-espresso);
+  color: var(--color-cream);
+}
+
+/* ==========================================================================
+   2. HERO SECTION
+   ========================================================================== */
+.hero-section {
+  background-color: var(--color-cream);
+  padding: 90px 0 80px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+}
+
+.hero-title span {
+  color: var(--color-caramel);
+}
+
+.hero-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto 2rem;
+}
+
+/* ==========================================================================
+   SECTION TITLE
+   ========================================================================== */
+.section-padding {
+  padding: 70px 0;
+}
+
+.section-bg-alt {
+  background-color: var(--color-cream);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-caramel);
+  margin: 0.6rem auto 1rem;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   4. ALERT (NOTIFIKASI PROMO)
+   ========================================================================== */
+.alert-selaras {
+  background-color: #fff9f3;
+  color: var(--color-espresso);
+  border: 1px solid var(--color-border);
+  border-left: 5px solid var(--color-caramel);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.alert-selaras .alert-link {
+  color: var(--color-caramel-hover);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   3. CARD PRODUK
+   ========================================================================== */
+.card-produk {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-produk:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(54, 34, 20, 0.08);
+}
+
+.card-produk .icon-wrap {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  border-radius: 50%;
+  background-color: var(--color-cream);
+  color: var(--color-caramel);
+  font-size: 1.8rem;
+  margin: 0 auto 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-produk .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-produk .card-text {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.card-produk .product-price {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--color-caramel-hover);
+  margin-bottom: 0;
+}
+
+.badge-selaras {
+  background-color: var(--color-cream-subtle);
+  color: var(--color-espresso);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 50px;
+  border: 1px solid var(--color-border);
+}
+
+/* ==========================================================================
+   6. FORM KONTAK
+   ========================================================================== */
+.contact-card {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 2.2rem;
+  box-shadow: 0 6px 20px rgba(54, 34, 20, 0.05);
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-espresso);
+}
+
+.form-control,
+.form-select {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+  color: var(--color-text-body);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-caramel);
+  box-shadow: 0 0 0 0.2rem rgba(185, 122, 71, 0.2);
+}
+
+/* ==========================================================================
+   5. MODAL
+   ========================================================================== */
+.modal-content {
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: var(--color-espresso);
+  color: var(--color-cream);
+  border-bottom: none;
+  padding: 1.1rem 1.5rem;
+}
+
+.modal-header .modal-title {
+  color: var(--color-cream);
+  font-size: 1.25rem;
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--color-text-body);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 0.9rem 1.5rem;
+}
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+.footer-selaras {
+  background-color: var(--color-espresso-dark);
+  color: #dfd5cb;
+  padding: 45px 0 25px;
+  border-top: 3px solid var(--color-caramel);
+}
+
+.footer-selaras h5 {
+  color: var(--color-cream);
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-selaras p {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.footer-selaras a {
+  color: #dfd5cb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-selaras a:hover {
+  color: var(--color-caramel);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 25px;
+  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #9f9387;
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selaras Coffee - UMKM Kopi Lokal & Kemitraan</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS Eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =======================================================================
+       1. NAVBAR RESPONSIF
+       ======================================================================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-selaras">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#beranda">
+        <i class="bi bi-cup-hot-fill"></i>
+        <span>Selaras Coffee</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSelarasMenu" aria-controls="navbarSelarasMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSelarasMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#beranda">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak & Mitra</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <button type="button" class="btn btn-selaras btn-sm" data-bs-toggle="modal" data-bs-target="#promoModal">
+              Info Promo
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =======================================================================
+       2. HERO SECTION
+       ======================================================================= -->
+  <header class="hero-section text-center" id="beranda">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <span class="badge badge-selaras mb-3">UMKM Kopi Nusantara Berkualitas</span>
+          <h1 class="hero-title">
+            Harmoni Rasa Kopi Nusantara di <span>Setiap Cangkir</span>
+          </h1>
+          <p class="hero-subtitle">
+            Selaras Coffee menyajikan racikan biji kopi pilihan hasil kerja sama langsung dengan petani lokal. Cita rasa otentik yang seimbang untuk pecinta kopi dan peluang bisnis yang menjanjikan.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="#produk" class="btn btn-selaras">Lihat Menu Produk</a>
+            <a href="#kontak" class="btn btn-selaras-outline">Ajukan Kemitraan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       4. ALERT (NOTIFIKASI PROMO)
+       ======================================================================= -->
+  <div class="container mt-4">
+    <div class="alert alert-selaras alert-dismissible fade show d-flex align-items-center justify-content-between flex-wrap gap-2" role="alert">
+      <div class="d-flex align-items-center">
+        <i class="bi bi-tag-fill me-2 fs-5 text-warning"></i>
+        <div>
+          <strong>Promo Kemitraan & Pelanggan Baru!</strong> Dapatkan diskon 20% untuk paket pasokan biji kopi pertama Anda.
+          <a href="#promoModal" class="alert-link ms-1" data-bs-toggle="modal" data-bs-target="#promoModal">Lihat syarat & ketentuan</a>.
+        </div>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>
+    </div>
+  </div>
+
+  <main>
+    <!-- =====================================================================
+         TENTANG KAMI (RINGKASAN UMKM)
+         ===================================================================== -->
+    <section class="section-padding" id="tentang">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="text-uppercase fw-semibold text-muted small">Mengenal Selaras Coffee</span>
+            <h2 class="section-title mt-1">Dedikasi Kopi Asli dari Bumi Nusantara</h2>
+            <div class="section-divider ms-0"></div>
+            <p>
+              Berawal dari kecintaan terhadap ragam cita rasa kopi Indonesia, <strong>Selaras Coffee</strong> hadir sebagai UMKM yang menjembatani petani kopi lokal dengan para penikmat kopi modern.
+            </p>
+            <p class="text-muted">
+              Kami menjaga konsistensi rasa melalui pemilihan biji kopi berkualitas, proses sangrai berstandar, serta kemasan yang higienis. Selain kedai kopi, kami siap menjadi penyuplai terpercaya untuk kafe, resto, maupun mitra usaha Anda.
+            </p>
+            <div class="row g-3 pt-2">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
+                  <span>100% Biji Kopi Lokal</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
+                  <span>Dukungan Kemitraan UMKM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 rounded-4 section-bg-alt border">
+              <h4 class="mb-3">Kenapa Memilih Kami?</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex mb-3">
+                  <i class="bi bi-patch-check-fill text-warning me-3 fs-5"></i>
+                  <div>
+                    <h6 class="mb-1">Kualitas Terjamin</h6>
+                    <small class="text-muted">Proses roasting terjadwal menjaga kesegaran aroma dan rasa kopi.</small>
+                  </div>
+                </li>
+                <li class="d-flex mb-3">
+                  <i class="bi bi-handshake-fill text-warning me-3 fs-5"></i>
+                  <div>
+                    <h6 class="mb-1">Mitra Usaha Fleksibel</h6>
+                    <small class="text-muted">Skema pasokan bahan baku dan franchise yang ramah untuk pelaku usaha pemula.</small>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <i class="bi bi-heart-fill text-warning me-3 fs-5"></i>
+                  <div>
+                    <h6 class="mb-1">Pemberdayaan Petani</h6>
+                    <small class="text-muted">Mendukung keberlanjutan ekonomi petani kopi lokal di Jawa dan Sumatra.</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         3. CARD PRODUK (MINIMAL 3 CARD)
+         ===================================================================== -->
+    <section class="section-padding section-bg-alt" id="produk">
+      <div class="container">
+        <div class="text-center">
+          <span class="text-uppercase fw-semibold text-muted small">Pilihan Terbaik</span>
+          <h2 class="section-title">Produk Unggulan Kami</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Diseduh langsung untuk Anda atau siap disuplai ke bisnis Anda.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-produk h-100 text-center p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="icon-wrap">
+                  <i class="bi bi-cup-hot"></i>
+                </div>
+                <div class="mb-2">
+                  <span class="badge badge-selaras">Best Seller</span>
+                </div>
+                <h5 class="card-title">Kopi Susu Selaras</h5>
+                <p class="card-text flex-grow-1">
+                  Perpaduan espresso blend house pilihan dengan susu segar dan sirup gula aren organik yang pas.
+                </p>
+                <div class="pt-2 border-top mt-3">
+                  <p class="product-price">Rp 22.000 / cup</p>
+                  <a href="#kontak" class="btn btn-sm btn-selaras w-100 mt-2">Pesan Sekarang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-produk h-100 text-center p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="icon-wrap">
+                  <i class="bi bi-snow2"></i>
+                </div>
+                <div class="mb-2">
+                  <span class="badge badge-selaras">Segar & Ringan</span>
+                </div>
+                <h5 class="card-title">Cold Brew Aren</h5>
+                <p class="card-text flex-grow-1">
+                  Ekstraksi dingin selama 12 jam menghasilkan cita rasa lembut, rendah asam, dan aroma rempah alami.
+                </p>
+                <div class="pt-2 border-top mt-3">
+                  <p class="product-price">Rp 25.000 / botol</p>
+                  <a href="#kontak" class="btn btn-sm btn-selaras w-100 mt-2">Pesan Sekarang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-produk h-100 text-center p-3">
+              <div class="card-body d-flex flex-column">
+                <div class="icon-wrap">
+                  <i class="bi bi-box-seam"></i>
+                </div>
+                <div class="mb-2">
+                  <span class="badge badge-selaras">Kemitraan & Retail</span>
+                </div>
+                <h5 class="card-title">Biji Kopi Sangrai 250g</h5>
+                <p class="card-text flex-grow-1">
+                  Biji kopi Arabika single origin (Pangalengan/Gayo) medium roast, cocok untuk stok kedai & konsumsi harian.
+                </p>
+                <div class="pt-2 border-top mt-3">
+                  <p class="product-price">Rp 85.000 / pack</p>
+                  <a href="#kontak" class="btn btn-sm btn-selaras w-100 mt-2">Pesan / Grosir</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         6. FORM KONTAK (PELANGGAN & MITRA BISNIS)
+         ===================================================================== -->
+    <section class="section-padding" id="kontak">
+      <div class="container">
+        <div class="text-center">
+          <span class="text-uppercase fw-semibold text-muted small">Mari Terhubung</span>
+          <h2 class="section-title">Hubungi Kami & Kemitraan</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Punya pertanyaan, pesanan khusus, atau berminat menjadi mitra bisnis Selaras Coffee?</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-card">
+              <!-- Alert Notifikasi Saat Form Berhasil Terkirim -->
+              <div id="formAlertNotification"></div>
+
+              <form id="formKontakSelaras" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputNama" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="inputNama" placeholder="Contoh: Budi Santoso" required>
+                    <div class="invalid-feedback">Nama lengkap wajib diisi.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email Aktif</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="nama@email.com" required>
+                    <div class="invalid-feedback">Harap masukkan alamat email yang valid.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="selectKategori" class="form-label">Keperluan Hubungan</label>
+                    <select class="form-select" id="selectKategori" required>
+                      <option value="" selected disabled>Pilih keperluan...</option>
+                      <option value="konsumen">Pertanyaan Pesanan / Konsumen</option>
+                      <option value="kemitraan">Kemitraan Franchise / Usaha</option>
+                      <option value="suplai">Suplai Grosir Biji Kopi untuk Kafe/Resto</option>
+                      <option value="lainnya">Lainnya</option>
+                    </select>
+                    <div class="invalid-feedback">Silakan pilih kategori keperluan.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="inputPesan" class="form-label">Pesan / Rencana Kerja Sama</label>
+                    <textarea class="form-control" id="inputPesan" rows="4" placeholder="Tuliskan pesan, pertanyaan, atau rencana kolaborasi Anda di sini..." required></textarea>
+                    <div class="invalid-feedback">Pesan tidak boleh kosong.</div>
+                  </div>
+
+                  <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-selaras w-100 py-2">
+                      <i class="bi bi-send-fill me-1"></i> Kirim Pesan
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       7. FOOTER
+       ======================================================================= -->
+  <footer class="footer-selaras">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Kolom 1: Brand & Slogan -->
+        <div class="col-md-4">
+          <h5><i class="bi bi-cup-hot-fill text-warning me-1"></i> Selaras Coffee</h5>
+          <p class="text-secondary">
+            UMKM kopi lokal yang mengedepankan kualitas biji kopi Nusantara dan rasa yang bersahabat untuk semua kalangan.
+          </p>
+        </div>
+
+        <!-- Kolom 2: Kontak & Lokasi -->
+        <div class="col-md-4">
+          <h5>Kedai & Workshop</h5>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill text-warning me-2"></i>Jl. Kopi Nusantara No. 12, Bekasi</p>
+          <p class="mb-1"><i class="bi bi-telephone-fill text-warning me-2"></i>+62 812-3456-7890</p>
+          <p class="mb-1"><i class="bi bi-envelope-fill text-warning me-2"></i>halo@selarascoffee.id</p>
+        </div>
+
+        <!-- Kolom 3: Jam Operasional & Mitra -->
+        <div class="col-md-4">
+          <h5>Jam Operasional</h5>
+          <p class="mb-1">Senin - Jumat: 08.00 - 22.00 WIB</p>
+          <p class="mb-1">Sabtu - Minggu: 07.00 - 23.00 WIB</p>
+          <p class="small text-secondary mt-2">Terbuka untuk janji temu mitra bisnis.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 Selaras Coffee. Dibuat dengan Bootstrap 5 & Custom CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       5. MODAL (DETAIL PROMO & INFO KEMITRAAN)
+       ======================================================================= -->
+  <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="promoModalLabel">
+            <i class="bi bi-gift-fill me-2 text-warning"></i>Syarat Promo & Kemitraan
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <h6 class="fw-bold mb-2">1. Promo Pelanggan Baru</h6>
+          <ul class="mb-3 ps-3">
+            <li>Diskon 20% berlaku untuk pembelian minimal 2 pack biji kopi 250g.</li>
+            <li>Berlaku untuk pemesanan online maupun langsung di kedai.</li>
+            <li>Periode promo berlaku hingga akhir bulan berjalan.</li>
+          </ul>
+
+          <h6 class="fw-bold mb-2">2. Peluang Mitra Bisnis & Grosir</h6>
+          <ul class="mb-0 ps-3">
+            <li>Harga khusus suplai rutin untuk pemilik kafe, resto, dan kantor.</li>
+            <li>Free sample biji kopi untuk calon mitra bisnis.</li>
+            <li>Konsultasi gratis kalibrasi espresso dan menu minuman.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+          <a href="#kontak" class="btn btn-selaras btn-sm" data-bs-dismiss="modal">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript Interaktif Form Kontak -->
+  <script>
+    const formKontak = document.getElementById('formKontakSelaras');
+    const formAlertNotification = document.getElementById('formAlertNotification');
+
+    formKontak.addEventListener('submit', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (!formKontak.checkValidity()) {
+        formKontak.classList.add('was-validated');
+      } else {
+        formAlertNotification.innerHTML = `
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            <strong>Terima kasih!</strong> Pesan Anda telah terkirim. Tim Selaras Coffee akan segera menghubungi Anda.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        `;
+        formKontak.reset();
+        formKontak.classList.remove('was-validated');
+      }
+    });
+  </script>
+</body>
+</html>

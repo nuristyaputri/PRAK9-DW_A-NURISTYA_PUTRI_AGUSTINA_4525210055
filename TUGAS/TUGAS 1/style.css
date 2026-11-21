@@ -1,0 +1,53 @@
+body {
+    background-color: #F7F5EF;
+}
+
+/* HEADER */
+header {
+    background-color: #718873;
+}
+
+/* JUDUL */
+h2 {
+    color: #526B55;
+}
+
+/* GAMBAR PRODUK */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CARD */
+.card {
+    border: none;
+    transition: transform 0.2s;
+    background-color: #FFFFFF;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* HARGA */
+.harga {
+    color: #718873;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.btn-hijab {
+    background-color: #718873;
+    color: white;
+    border: none;
+}
+
+.btn-hijab:hover {
+    background-color: #526B55;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #526B55;
+}
